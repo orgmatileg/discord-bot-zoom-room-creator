@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  discord_bot_zoom_creator:
+    container_name: discord_bot_zoom_creator
+    image: docker.pkg.github.com/orgmatileg/discord-bot-zoom-room-creator/bot:latest
+    restart: always
+    environment:
+      ZOOM_USER_ID: your_email
+      ZOOM_TOKEN: your_token
+      DISCORD_BOT_TOKEN: your_token
